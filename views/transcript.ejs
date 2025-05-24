@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transcript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        padding: 40px;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h1 {
+        color: #444;
+      }
+
+      a {
+        text-decoration: none;
+        color: #d9230f;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+
+      a:hover {
+        color: #a91c0c;
+      }
+
+      pre {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">← Back</a>
+    <h1>Transcript for Video: <%= videoId %></h1>
+    <pre><%- joinedText %></pre>
+  </body>
+</html>
